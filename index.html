@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>QR Code Scanner</title>
+    <!-- <script src="https://unpkg.com/browse/html5-qrcode@2.3.8/html5-qrcode.min.js" type="script"></script> -->
+    <!-- <script src="assets/html5-qrcode/html5-qrcode.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js" integrity="sha512-r6rDA7W6ZeQhvl8S7yRVQUKVHdexq+GAlNkNNqVC7YyIV+NwqCTJe2hDWCiffTyRNOeGEzRRJ9ifvRm/HCzGYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="card">
+        <header>
+            <h1>QR Code Scanner</h1>
+            <p>Click the icon below and hold the camera steadily against the qr code.</p>
+        </header>
+        <div class="qr-form">
+            <div id="reader"></div>
+        </div>
+        <div class="text-output">
+            <div id="result"></div>
+            <div class="buttons">
+                <button class="btn-copy" style="background: #a43acb;">Copy</button>
+                <button class="btn-reset" style="background: #a6a6a6;">Reset</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+</html>
