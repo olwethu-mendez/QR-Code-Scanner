@@ -121,6 +121,7 @@ header p{
         overflow: hidden;
     }
 
+    .card::before{content: 'med screen'; color:rgba(71, 23, 247,0.75); }
     .card{
         width: 95vw;
         min-height: 600px;
@@ -145,10 +146,14 @@ header p{
     .card{
         width: 95vw;
         min-height: 600px;
-        max-height: 750px;
+        max-height: 850px;
         display: flex;
         justify-content: space-between;
         padding: 0;
+    }
+    .card::before{
+        content: 'small screen';
+        color:rgba(71, 23, 247,0.75);
     }
 
     #reader{
