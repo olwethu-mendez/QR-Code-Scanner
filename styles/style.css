@@ -121,20 +121,35 @@ header p{
         overflow: hidden;
     }
 
-    .card::before{content: 'med screen'; color:rgba(71, 23, 247,0.75); }
+    /* .card::before{content: 'med screen'; color:rgba(71, 23, 247,0.75); } */
     .card{
         width: 95vw;
         min-height: 600px;
+        max-height: 750px;
         display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 
     #reader button{
         bottom: 1.5%;
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
     }
 
     #reader{
         width: 300px;
         height: 300px;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 
@@ -146,32 +161,16 @@ header p{
     .card{
         width: 95vw;
         min-height: 600px;
-        max-height: 850px;
         display: flex;
-        justify-content: space-between;
         padding: 0;
     }
     .card::before{
-        content: 'small screen';
+        /* content: 'small screen';
         color:rgba(71, 23, 247,0.75);
-    }
+    } */
 
     #reader{
-        margin: 0;
-        padding-top: 10px;
-        padding-bottom: 10px;
         width: 260px;
         height: 260px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
-
-    #reader button{
-        position: static;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 10%;
     }
 }

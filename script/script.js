@@ -6,8 +6,8 @@ const resultText = document.querySelector('#result');
 const resultsDisplay = document.querySelector('.text-output');
 const scanner = new Html5QrcodeScanner('reader', {
     qrbox: {
-        width: 200,
-        height: 200,
+        width: 225,
+        height: 225,
     },
     fps: 20,
 });
