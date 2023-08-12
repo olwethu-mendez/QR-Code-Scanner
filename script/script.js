@@ -20,7 +20,7 @@ function success(result){
 
     if(linkVal.test(result)||linkVal2.test(result)||linkVal3.test(result)){
         resultText.innerHTML = `<h2>Success!</h2>
-        <div class="textarea"><a href="${result}" style="color:#4717f7;">${result}</a></div>`;
+        <div class="textarea"><a href="${result}" target="_blank" style="color:#4717f7;">${result}</a></div>`;
     }
     else{
         resultText.innerHTML = `<h2>Success!</h2>
