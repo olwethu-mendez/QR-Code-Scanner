@@ -132,7 +132,8 @@ header p{
     }
 
     #reader{
-        width: 75vw;
+        width: 350px;
+        height: 350px;
     }
 }
 
