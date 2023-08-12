@@ -102,13 +102,18 @@ header p{
     color: #130e20;
 }
 
-#result textarea{
+#result .textarea{
     width: 90%;
     height: 120px;
     outline: none;
+    overflow: auto;
     background: none;
+    text-align: justify;
+    margin: 0 auto;
     padding: 10px 15px;
     border: 1px solid #0e0a18;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 @media only screen and (max-width: 768) {
