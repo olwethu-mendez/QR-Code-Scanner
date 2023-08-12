@@ -116,14 +116,14 @@ header p{
     word-wrap: break-word;
 }
 
-@media only screen and (max-width: 500px) {
+@media (min-width: 350px) and (max-width: 500px) {
     *{
         overflow: hidden;
     }
 
     .card{
         width: 95vw;
-        height: 75vh;
+        min-height: 600px;
         display: flex;
     }
 
@@ -132,7 +132,39 @@ header p{
     }
 
     #reader{
-        width: 350px;
-        height: 350px;
+        width: 75vw;
+    }
+}
+
+@media (min-width: 275px) and (max-width: 350px) {
+    *{
+        overflow: hidden;
+    }
+
+    .card{
+        width: 95vw;
+        min-height: 600px;
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    #reader{
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 260px;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #reader button{
+        position: static;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10%;
     }
 }
