@@ -145,6 +145,7 @@ header p{
     .card{
         width: 95vw;
         min-height: 600px;
+        max-height: fit-content;
         display: flex;
         justify-content: space-around;
         padding: 0;
